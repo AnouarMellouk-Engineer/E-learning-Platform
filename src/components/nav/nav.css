@@ -1,0 +1,98 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  position: relative;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pointer:hover {
+  color: #0d6efd;
+}
+
+.menu-details {
+  position: absolute;
+  padding-top: 50px;
+  width: 100%;
+  left: 0px;
+  top: 70px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.Resaurses {
+  display: none;
+}
+
+.Products {
+  display: none;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 30px;
+}
+
+.title-menu {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.element {
+  transition: 0.5s;
+
+  border-radius: 10px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.element:hover {
+  background-color: #0d6dfd31;
+}
+
+.element p:first-child {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+.element:hover p:first-child {
+  color: #0d6efd;
+}
+
+.element p:last-child {
+  font-size: 0.9rem;
+  opacity: 70%;
+}
+
+.arraw1 {
+  transition: 0.3s;
+}
+
+.arraw {
+  transform: rotate(180deg);
+}
