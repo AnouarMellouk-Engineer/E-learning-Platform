@@ -2,10 +2,12 @@ import { useState } from "react";
 import "./nav.css";
 import Details from "./Details";
 import Button from "../Button/Button";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Nav = () => {
   const [showres, setshowres] = useState(false);
   const [showProd, setshowProd] = useState(false);
+  const [diplayMenu, setDisplayMenu] = useState(false);
   const products = [
     { title: "Courses", description: "Comprehensive coding sourse" },
     {
@@ -32,7 +34,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="logo">E-learning</div>
-      <ul>
+      <ul className={`${!diplayMenu && "hidden"}`}>
         <li>
           <Details
             title="Products"
@@ -67,6 +69,12 @@ const Nav = () => {
       <div className="buttons">
         <Button content="Sign in" color="black" />
         <Button content="Log in" color="blue" />
+        <RxHamburgerMenu
+          className="menu"
+          onClick={() => {
+            setDisplayMenu(!diplayMenu);
+          }}
+        />
       </div>
     </nav>
   );

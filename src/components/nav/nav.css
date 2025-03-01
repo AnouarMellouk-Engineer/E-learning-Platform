@@ -89,10 +89,132 @@ ul {
   opacity: 70%;
 }
 
+.arraw2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .arraw1 {
   transition: 0.3s;
 }
 
 .arraw {
   transform: rotate(180deg);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 860px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  }
+
+  .pointer {
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+
+  .list-item {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arraw2 {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .pointer:hover .arraw2 {
+    background-color: #0d6dfd31;
+  }
+
+  .pointer:hover {
+    color: #0d6efd;
+    background-color: #0d6dfd31;
+  }
+
+  .menu-details {
+    position: relative;
+    top: 000px;
+    padding-top: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    transition: 2.3s;
+  }
+
+  .details {
+    overflow: hidden;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title-menu {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    /* grid-template-columns: repeat(1, 100%); */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    gap: 00px;
+  }
+
+  .element {
+    /* border-radius: 10px; */
+    border-radius: 0px;
+    /* padding: 20px 30px; */
+    padding: 10px 20px;
+  }
+
+  .element p:first-child {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    opacity: 90%;
+  }
 }
