@@ -51,7 +51,7 @@ const Courses = () => {
           </p>
         </div>
         <h2>
-          Discover Amigoscode's Latest <span> Premium Courses!</span>
+          Discover Our Latest <span> Premium Courses!</span>
         </h2>
         <p>
           Get unlimited access to coding courses, Quizzes, Builds and Tools.
