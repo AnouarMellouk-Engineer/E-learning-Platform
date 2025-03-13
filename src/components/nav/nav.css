@@ -18,7 +18,7 @@ nav {
   gap: 10px;
 }
 
-ul {
+nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
@@ -126,7 +126,7 @@ ul {
     display: block;
   }
 
-  ul {
+  nav ul {
     position: absolute;
     top: 100px;
     left: 0;
@@ -144,7 +144,7 @@ ul {
     display: none;
   }
 
-  li {
+  nav li {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.199);
   }

@@ -71,13 +71,13 @@ const Footer = () => {
             r="44.899"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#fd5"></stop>
-            <stop offset=".328" stop-color="#ff543f"></stop>
-            <stop offset=".348" stop-color="#fc5245"></stop>
-            <stop offset=".504" stop-color="#e64771"></stop>
-            <stop offset=".643" stop-color="#d53e91"></stop>
-            <stop offset=".761" stop-color="#cc39a4"></stop>
-            <stop offset=".841" stop-color="#c837ab"></stop>
+            <stop offset="0" stopColor="#fd5"></stop>
+            <stop offset=".328" stopColor="#ff543f"></stop>
+            <stop offset=".348" stopColor="#fc5245"></stop>
+            <stop offset=".504" stopColor="#e64771"></stop>
+            <stop offset=".643" stopColor="#d53e91"></stop>
+            <stop offset=".761" stopColor="#cc39a4"></stop>
+            <stop offset=".841" stopColor="#c837ab"></stop>
           </radialGradient>
           <path
             fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
@@ -91,8 +91,8 @@ const Footer = () => {
             gradientTransform="matrix(1 0 0 .6663 0 1.849)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#4168c9"></stop>
-            <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+            <stop offset="0" stopColor="#4168c9"></stop>
+            <stop offset=".999" stopColor="#4168c9" stopOpacity="0"></stop>
           </radialGradient>
           <path
             fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
@@ -172,7 +172,6 @@ const Footer = () => {
         "Portfolly",
         "Courses",
         "Builds",
-        // "soon",
         "Bootcamp",
         "Roadmaps",
         "Textbook",
@@ -203,7 +202,9 @@ const Footer = () => {
           <form>
             <input type="text" placeholder="name" />
             <input type="text" placeholder="email" />
-            <Button color="black" content="submit" />
+            <div className="div">
+              <Button color="black" content="submit" />
+            </div>
           </form>
           <ul className="footer-social-media">
             {medias.map((media, ind) => {
@@ -218,13 +219,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-links">
-          {links.map((link) => {
+          {links.map((link, ind) => {
             return (
-              <div className="categorie-link">
+              <div className="categorie-link" key={ind}>
                 <h5>{link.title}</h5>
                 <ul>
-                  {link.setOfLinks.map((link) => {
-                    return <li>{link}</li>;
+                  {link.setOfLinks.map((link, ind) => {
+                    return <li key={ind}>{link}</li>;
                   })}
                 </ul>
               </div>
