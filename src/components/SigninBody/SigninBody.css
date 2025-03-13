@@ -1,0 +1,111 @@
+.signin-body {
+  overflow: hidden;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.signin-body h1 {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.signin-body p {
+  opacity: 70%;
+}
+
+.signin-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+  gap: 0;
+}
+
+.signin-body label {
+  margin-bottom: 10px;
+}
+
+.signin-body form input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.button-signin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+  width: 60%;
+}
+
+.separator hr {
+  width: 100%;
+  height: 1px; /* Set thickness */
+  background-color: rgba(0, 0, 0, 0.185); /* Change color */
+  border: none;
+}
+
+.separator span {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+.signin-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.signin-links button {
+  display: flex;
+  width: 50%;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  background-color: white;
+  gap: 10px;
+}
+.signin-links button svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 730px) {
+  .signin-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .signin-links button {
+    /* display: flex; */
+    width: 138px;
+    /* align-items: center; */
+
+    /* border: 1px solid rgba(0, 0, 0, 0.158);
+    background-color: white;
+    gap: 10px; */
+  }
+
+  /* .signin-links button svg {
+    display: none;
+  } */
+}

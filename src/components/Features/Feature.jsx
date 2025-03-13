@@ -2,7 +2,7 @@ import FeatureCard from "./FeatureCard";
 
 import "./Feature.css";
 
-const Feature = () => {
+const Feature = (prop) => {
   const first = [
     {
       id: 1,
@@ -39,7 +39,7 @@ const Feature = () => {
   ];
 
   return (
-    <div className="features">
+    <div className="features" ref={prop.reff}>
       <p className="feature-logo">Features</p>
       <h2>
         The One-Stop Platform for <span> Developers</span>

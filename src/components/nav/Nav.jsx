@@ -3,8 +3,10 @@ import "./nav.css";
 import Details from "./Details";
 import Button from "../Button/Button";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (prop) => {
+  const navigate = useNavigate();
   const [showres, setshowres] = useState(false);
   const [showProd, setshowProd] = useState(false);
   const [diplayMenu, setDisplayMenu] = useState(false);
@@ -62,13 +64,41 @@ const Nav = () => {
             }}
           />
         </li>
-        <li className="pointer">Pricing</li>
-        <li className="pointer">Courses</li>
-        <li className="pointer">About us</li>
+        <li
+          className="pointer"
+          onClick={() => {
+            prop.movee(prop.ref3);
+          }}
+        >
+          Pricing
+        </li>
+
+        <li
+          className="pointer"
+          onClick={() => {
+            prop.movee(prop.ref1);
+          }}
+        >
+          Courses
+        </li>
+        <li
+          className="pointer"
+          onClick={() => {
+            prop.movee(prop.ref2);
+          }}
+        >
+          About us
+        </li>
       </ul>
       <div className="buttons">
-        <Button content="Sign in" color="black" />
-        <Button content="Log in" color="blue" />
+        <Button
+          content="Sign in"
+          color="black"
+          Click={() => {
+            navigate("/Signin");
+          }}
+        />
+        <Button content="Sign up" color="blue" />
         <RxHamburgerMenu
           className="menu"
           onClick={() => {

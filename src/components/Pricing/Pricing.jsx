@@ -5,10 +5,10 @@ import { IoRocketOutline } from "react-icons/io5";
 import { PiShootingStarBold } from "react-icons/pi";
 import { useState } from "react";
 
-const Pricing = () => {
+const Pricing = (prop) => {
   const [duration, setDuration] = useState("Monthly");
   return (
-    <div className="pricing-setion">
+    <div className="pricing-setion" ref={prop.reff}>
       <p className="feature-logo">Pricing</p>
       <h2>
         Unlimited Learning with <span> One Subscription</span>

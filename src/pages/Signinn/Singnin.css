@@ -1,0 +1,45 @@
+.signin-page {
+  overflow: hidden;
+  padding: 50px 30px;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.signin-page .form {
+  width: 50%;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+.signin-image {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  width: 80%;
+}
+
+.signin-image img {
+  width: 100%;
+  border-radius: 30px;
+  /* border: 3px solid #0d6efd; */
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.301);
+  /* rgba(0, 0, 0, 0.301 */
+}
+
+@media (max-width: 1050px) {
+  .signin-page .form {
+    width: 100%;
+  }
+
+  .signin-image {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .signin-page {
+    padding: 0;
+  }
+}

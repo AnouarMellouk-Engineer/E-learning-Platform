@@ -4,7 +4,7 @@ import { techCourses } from "../../assets/CoursesList";
 import { courses } from "../../assets/BuildsList";
 import CourseCard from "./CourseCard";
 import "./Courses.css";
-const Courses = () => {
+const Courses = (prop) => {
   const [content, setConetent] = useState("Courses");
   const techList = techCourses.map((course) => {
     if (course.id < 7) {
@@ -34,7 +34,7 @@ const Courses = () => {
     }
   });
   return (
-    <div className="courses">
+    <div className="courses" ref={prop.reff}>
       <div className="courses-header">
         <div className="switsher">
           <p

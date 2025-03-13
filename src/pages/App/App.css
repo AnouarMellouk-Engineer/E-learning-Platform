@@ -4,6 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 .container {
