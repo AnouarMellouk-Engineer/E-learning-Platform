@@ -1,0 +1,79 @@
+.products {
+  overflow: hidden;
+}
+
+.products-header {
+  padding-top: 40px;
+  display: flex;
+}
+
+.filter {
+  width: 20%;
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.253);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.filter .filter-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-product {
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-right: none;
+  width: 80%;
+}
+.change {
+  width: 45px;
+  height: 25px;
+  background: linear-gradient(45deg, #589bff, #0d6efd);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.change div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 3px;
+  top: 9%;
+  transition: 0.3s;
+}
+
+.change .not-filter {
+  left: 21px;
+}
+
+.search-course {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-radius: 11px;
+  gap: 15px;
+  width: 50%;
+  background-color: #e2e2e24d;
+}
+
+.search-course input {
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  background-color: #e2e2e24d;
+}
+
+.search-course .search-icon {
+  font-size: 1.6rem;
+}
