@@ -1,8 +1,10 @@
+import reactImage from "../assets/images/reactjs.webp";
+
 export const courses = [
   {
     id: 10,
     title: "UI Design Fundamentals with Figma",
-    image: "./src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "UI/UX Design",
     description:
       "Learn the basics of UI design and how to create stunning user interfaces using Figma.",
@@ -59,7 +61,7 @@ export const courses = [
   {
     id: 11,
     title: "User Experience (UX) Research & Design",
-    image: "./src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "UI/UX Design",
     description:
       "Master UX research techniques and design user-centered experiences.",
@@ -121,7 +123,7 @@ export const courses = [
   {
     id: 12,
     title: "Designing for Mobile: UI & UX Best Practices",
-    image: "./src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "UI/UX Design",
     description:
       "Learn how to create user-friendly mobile app designs with a focus on usability and aesthetics.",
@@ -183,7 +185,7 @@ export const courses = [
   {
     id: 13,
     title: "Digital Marketing Mastery",
-    image: "./src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "Marketing",
     description:
       "Learn how to create and execute digital marketing strategies for business growth.",
@@ -246,7 +248,7 @@ export const courses = [
   {
     id: 14,
     title: "Social Media Marketing for Business",
-    image: "./src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "Marketing",
     description:
       "Master the art of social media marketing to grow your brand and engage audiences.",
@@ -309,7 +311,7 @@ export const courses = [
   {
     id: 15,
     title: "SEO & Content Marketing for Beginners",
-    image: "./src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "Marketing",
     description:
       "Learn how to drive organic traffic to your website with SEO and content marketing strategies.",
