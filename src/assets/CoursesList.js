@@ -1,8 +1,18 @@
+import jsImage from "./images/javascript.webp";
+import reactImage from "./images/reactjs.webp";
+import devOpsImage from "./images/docker.webp";
+import javaImage from "./images/java-data-structures.webp";
+import linuxImage from "./images/linux-fundamentals.webp";
+import gitImage from "./images/git-for-professionals.webp";
+import springImage from "./images/spring-boot.webp";
+import sqlImage from "./images/sql-and-db-fundamentals.webp";
+import webImage from "./images/javascript-mastery.webp";
+
 export const techCourses = [
   {
     id: 1,
     title: "JavaScript for Beginners",
-    image: " ../src/assets/images/javascript.webp",
+    image: jsImage,
 
     category: "Programming",
     description:
@@ -60,7 +70,7 @@ export const techCourses = [
   {
     id: 2,
     title: "Mobile App Development with React Native",
-    image: "../src/assets/images/reactjs.webp",
+    image: reactImage,
     category: "Mobile Development",
     description:
       "Learn to build cross-platform mobile apps using React Native.",
@@ -117,7 +127,7 @@ export const techCourses = [
   {
     id: 3,
     title: "DevOps & CI/CD Pipelines",
-    image: " ../src/assets/images/docker.webp",
+    image: devOpsImage,
     category: "DevOps",
     description:
       "Master DevOps practices and continuous integration/deployment pipelines.",
@@ -174,7 +184,7 @@ export const techCourses = [
   {
     id: 4,
     title: "Algorithms & Data Structures",
-    image: " ../src/assets/images/java-data-structures.webp",
+    image: javaImage,
     category: "Computer Science",
     description:
       "Learn fundamental algorithms and data structures to solve complex problems efficiently.",
@@ -240,7 +250,7 @@ export const techCourses = [
   {
     id: 5,
     title: "Ethical Hacking & Cybersecurity",
-    image: " ../src/assets/images/linux-fundamentals.webp",
+    image: linuxImage,
     category: "Cybersecurity",
     description:
       "Learn how to identify vulnerabilities and secure computer systems.",
@@ -297,7 +307,7 @@ export const techCourses = [
   {
     id: 6,
     title: "Version Control with Git & GitHub",
-    image: " ../src/assets/images/git-for-professionals.webp",
+    image: gitImage,
     category: "Software Development",
     description:
       "Learn Git and GitHub to manage code efficiently, collaborate with teams, and contribute to open-source projects.",
@@ -362,7 +372,7 @@ export const techCourses = [
   {
     id: 7,
     title: "Spring & Spring Boot for Java Developers",
-    image: " ../src/assets/images//spring-boot.webp",
+    image: springImage,
     category: "Backend Development",
     description:
       "Master Spring Framework and Spring Boot to build powerful Java applications.",
@@ -425,7 +435,7 @@ export const techCourses = [
   {
     id: 8,
     title: "Mastering SQL & Databases",
-    image: " ../src/assets/images/sql-and-db-fundamentals.webp",
+    image: sqlImage,
     category: "Database Management",
     description:
       "Learn SQL from scratch and master database management for efficient data storage and retrieval.",
@@ -490,7 +500,7 @@ export const techCourses = [
   {
     id: 9,
     title: "Full-Stack Development with MERN Stack",
-    image: " ../src/assets/images/javascript-mastery.webp",
+    image: webImage,
     category: "Full-Stack Development",
     description:
       "Learn to build full-stack applications using MongoDB, Express, React, and Node.js.",
